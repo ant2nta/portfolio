@@ -1,0 +1,17 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+
+    &__item-2,
+    &__item-4,
+    &__item-6 {
+        grid-column: 3 / 2;
+    }
+
+    &__item-2r,
+    &__item-4r,
+    &__item-6r {
+        grid-row: 2 / 1;
+    }
+}

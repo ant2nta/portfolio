@@ -1,0 +1,39 @@
+.about {
+    margin-top: 46px;
+
+    &__title {
+        text-align: center;
+        margin: 36px 0 18px;
+    }
+
+    &__text {
+        line-height: 250%;
+        margin: 0 auto;
+        max-width: 66.66%;
+        text-align: center;
+        color: $color-neutral;
+
+        @media (max-width: 1270px) {
+            max-width: 80%;
+        }
+
+        @media (max-width: 876px) {
+            max-width: 100%;
+            margin-top: 18px;
+            line-height: 180%;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+            height: 2px;
+            background-color: $color-green;
+        }
+    }
+
+    &__text-left {
+        text-align: left;
+    }
+}
