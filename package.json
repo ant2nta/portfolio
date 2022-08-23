@@ -9,11 +9,12 @@
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-plugin-node": "^9.0.1",
-    "gh-pages": "2.0.0",
+    "gh-pages": "^2.0.0",
     "node-sass": "^4.14.1",
     "parcel": "^1.12.4"
   },
   "scripts": {
+    "build": "",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -31,5 +32,5 @@
   "bugs": {
     "url": "https://github.com/ant2nta/portfolio/issues"
   },
-  "homepage": "https://github.com/ant2nta/portfolio"
+  "homepage": "https://ant2nta.github.io/portfolio"
 }
