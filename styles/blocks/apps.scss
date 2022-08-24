@@ -34,24 +34,20 @@
         border-radius: 20px;
         margin-top: 32px;
 
-        &::after {
-            content: '';
-            background-image: url("../../images/arrow1.svg");
-            width: 24px;
-            height: 24px;
-        }
-
         &:hover {
             background: $color-pink;
             // background: $color-green;
             padding: 8px 28px;
 
-            &::after {
-                content: '';
+            .apps__link__arrow {
                 background-image: url("../../images/arrow2.svg");
-                width: 24px;
-                height: 24px;
             }
+        }
+
+        &__arrow {
+            width: 24px;
+            height: 24px;
+            background-image: url("../../images/arrow1.svg");
         }
     }
 

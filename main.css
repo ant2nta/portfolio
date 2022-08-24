@@ -378,21 +378,17 @@ b {
   border-radius: 20px;
   margin-top: 32px;
 }
-.apps__link::after {
-  content: "";
-  background-image: url("../../images/arrow1.svg");
-  width: 24px;
-  height: 24px;
-}
 .apps__link:hover {
   background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
   padding: 8px 28px;
 }
-.apps__link:hover::after {
-  content: "";
+.apps__link:hover .apps__link__arrow {
   background-image: url("../../images/arrow2.svg");
+}
+.apps__link__arrow {
   width: 24px;
   height: 24px;
+  background-image: url("../../images/arrow1.svg");
 }
 .apps__code {
   margin-top: 24px;

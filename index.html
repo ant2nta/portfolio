@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Yaroslav's portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/react.svg">
     <link rel="stylesheet" href="./main.css">
     <script src="./scripts/index.js" defer></script>
   </head>
 
   <body>
     <nav class="nav">
-      <a href="/">
+      <a href="/portfolio">
         <img
           src="./images/logo.svg"
           alt="portfolio logo"
@@ -50,14 +51,18 @@
 
       <div>
         <h1>
-          <b>Hi, i am <br>
+          <b>Hi, I am <br>
             Yaroslav Baiduk</b>
         </h1>
 
         <p class="header__paragraph">Frontend Developer</p>
 
         <div class="header__buttons">
-          <a href="/" class="header__btn header__btn__cv">
+          <a
+            href="./CV.pdf"
+            class="header__btn header__btn__cv"
+            download=""
+          >
             Download CV
           </a>
   
@@ -150,6 +155,7 @@
 
             <a href="https://ant2nta.github.io/layout_dia/" class="apps__link" target="_blank">
               View work
+              <div class="apps__link__arrow"></div>
             </a>
           </div>
         </div>
@@ -180,6 +186,7 @@
 
             <a href="https://ant2nta.github.io/layout_creativeBakery/" class="apps__link"target="_blank">
               View work
+              <div class="apps__link__arrow"></div>
             </a>
           </div>
         </div>
@@ -216,6 +223,7 @@
 
             <a href="https://ant2nta.github.io/react_todo-app/" class="apps__link" target="_blank">
               View work
+              <div class="apps__link__arrow"></div>
             </a>
           </div>
         </div>
@@ -244,6 +252,7 @@
 
             <a href="https://ant2nta.github.io/react_redux-list-of-todos/" class="apps__link" target="_blank">
               View work
+              <div class="apps__link__arrow"></div>
             </a>
           </div>
         </div>
@@ -272,6 +281,36 @@
 
             <a href="https://ant2nta.github.io/react_people-table-advanced/#/people" class="apps__link" target="_blank">
               View work
+              <div class="apps__link__arrow"></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="apps__element grid">
+          <img
+            src="./images/list-of-posts.png"
+            alt="react people table image"
+            class="apps__image grid__item-4"
+          >
+
+          <div class="apps__info grid__item-4r">
+            <h3 class="apps__title">List of posts</h3>
+
+            <p class="apps__text">
+              Created list of posts component with fetching data from server
+            </p>
+
+            <a
+              href="https://github.com/ant2nta/react_dynamic-list-of-posts/tree/develop/src"
+              class="apps__code"
+              target="_blank"
+            >
+              View code
+            </a>
+
+            <a href="https://ant2nta.github.io/react_dynamic-list-of-posts/" class="apps__link" target="_blank">
+              View work
+              <div class="apps__link__arrow"></div>
             </a>
           </div>
         </div>
@@ -316,7 +355,7 @@
         </a>
 
         <a
-          href="https://t.me/l28ve980"
+          href="https://t.me/yaroslav_baiduk"
           target="_blank"
         >
           <img src="./images/telegram.png" alt="contact logo" class="contacts__link">
