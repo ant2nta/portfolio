@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -370,20 +371,27 @@ b {
   text-transform: uppercase;
   font-size: 20px;
   display: flex;
-  align-items: center;
   justify-content: center;
   transition: 0.3s;
-  padding: 8px 16px;
+  padding: 8px 0 8px 16px;
   border: 1px solid #fff;
   border-radius: 20px;
   margin-top: 32px;
+  line-height: 100%;
+}
+.apps__link span::after {
+  content: "»";
+  font-size: 30px;
+  opacity: 0;
+  top: 0;
+  transition: 0.5s;
 }
 .apps__link:hover {
   background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
   padding: 8px 28px;
 }
-.apps__link:hover .apps__link__arrow {
-  background-image: url("../../images/arrow2.svg");
+.apps__link:hover span::after {
+  opacity: 1;
 }
 .apps__link__arrow {
   width: 24px;
